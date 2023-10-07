@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Amor, signo, calculadora, compatibilidade, zodiacal"/>
+    <meta name="author" content="Nicole de Souza">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>AmorZodiacal</title>
+</head>
+<body>
+    <header>
+        <div class="cabeçalho">
+            <a href="index.html" class="logo"><strong>Amor<span>Zodiacal</span></strong></a>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#amor">Calculadora de Amor</a></li>
+                    <li><a href="#signo1">Compatibilidade Zodiacal</a></li>
+                    <li><a href="#footer">Contato</a></li>
+                </ul>
+        <div class="dark-mode-toggle">
+        <button id="dark-mode-button">
+        <span class="toggle-icon">
+        <i class="fas fa-moon"></i>
+        </span>
+        </button>
+        </div>
+    </nav>
+</div>
+    </header>
+    <hr>
+    <section>
+        <div class="post-box">
+            <div class="texto">Bem-vindo ao 'AmorZodiacal', o seu destino online para explorar a mágica do amor e da compatibilidade zodiacal. Nosso site oferece uma calculadora de amor divertida e envolvente, onde você pode descobrir o quão compatível você é com alguém especial com base nos nomes e signos do zodíaco. Quer você esteja procurando por conselhos românticos ou apenas queira se divertir descobrindo como você e seu parceiro se encaixam astronomicamente, 'AmorZodiacal' está aqui para iluminar o seu caminho no mundo do amor e da astrologia.</div>
+            <img src="img/f83ecadb37afc2e280b2a584b4cc8dfa__1_-removebg-preview.png" alt="Imagem de um computador centralizado nas cores preto e marrom.">
+            <div id="amor">
+                <h2><strong>Calculadora de Amor</strong></h2>
+                <div class="texto"><i>Digite seu nome e o nome do seu parceiro / amante / paixão para encontrar compatibilidade amorosa e chances de um relacionamento amoroso bem-sucedido.</i></div>
+                <img src="img/b0178491983c421705af4fc9cd0524c4-removebg-preview (2).png" alt="Imagem de um coração centralizado nas cores vermelho e preto.">
+            <form id="loveCalculatorForm">
+                <label for="firstName">Seu Nome:</label>
+                <input type="text" id="firstName" required><br>
+                <label for="secondName">Nome do Parceiro(a):</label>
+                <input type="text" id="secondName" required><br>
+                <br>
+                <button type="submit">Calcular</button>
+            </form>
+            <div id="resultadoamor"></div>
+        </div>
+        </div>
+    </section>
+    <h2><strong>Compatibilidade Zodiacal</strong></h2>
+    <div class="texto"><i>Digite seu signo e o signo do seu parceiro / amante / paixão para encontrar compatibilidade zodiacal e chances de um relacionamento amoroso bem-sucedido.</i></div>
+    <br>
+    <div class="signos">Selecione dois signos para calcular a compatibilidade:</div>
+    <img src="img/7744bac6afc70542129f5bd74c979fb1-removebg-preview.png" alt="Imagem de uma meia lua centralizada na cor amarela.">
+    <br>
+    <br>
+    <select id="signo1">
+        <option value="Áries">Áries</option>
+        <option value="Touro">Touro</option>
+        <option value="Gêmeos">Gêmeos</option>
+        <option value="Câncer">Câncer</option>
+        <option value="Leão">Leão</option>
+        <option value="Virgem">Virgem</option>
+        <option value="Libra">Libra</option>
+        <option value="Escorpião">Escorpião</option>
+        <option value="Sagitário">Sagitário</option>
+        <option value="Capricórnio">Capricórnio</option>
+        <option value="Aquário">Aquário</option>
+        <option value="Peixes">Peixes</option>
+    </select>
+    <select id="signo2">
+        <option value="Áries">Áries</option>
+        <option value="Touro">Touro</option>
+        <option value="Gêmeos">Gêmeos</option>
+        <option value="Câncer">Câncer</option>
+        <option value="Leão">Leão</option>
+        <option value="Virgem">Virgem</option>
+        <option value="Libra">Libra</option>
+        <option value="Escorpião">Escorpião</option>
+        <option value="Sagitário">Sagitário</option>
+        <option value="Capricórnio">Capricórnio</option>
+        <option value="Aquário">Aquário</option>
+        <option value="Peixes">Peixes</option>
+    </select>
+    <br>
+    <br>
+    <button onclick="calcularCompatibilidade()">Calcular</button>
+    <p id="resultado"></p>
+    <hr>
+    <footer id="footer">
+        <div class="container2">
+            <div class="row">
+            <div class="col">
+            <h4>Contato:</h4>
+            <p>Email: AmorZodiacal@gmail.com</p>
+            <p>Telefone: (51) 99875-6513</p>
+        </div> 
+        <div class="col">   
+            <h4>Redes Sociais:</h4>  
+            <ul>   
+            <li><a href="https://pt-br.facebook.com/">Facebook</a></li>  
+            <li><a href="https://twitter.com/login?lang=pt">Twitter</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="col"> 
+            <h4>Links Úteis:</h4>
+            <ul>
+            <li><a href="#">Política de Privacidade</a></li>      
+            <li><a href="#">Termos de Serviço</a></li>      
+            <li><a href="#">FAQ</a></li>
+            </ul>   
+                </div>   
+            </footer>
+    <script src="main.js"></script>
+        </div>
+</body>
+</html>
